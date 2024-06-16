@@ -14,7 +14,7 @@ const Categories: React.FC<CategoriesProps> = ({ showHeading }) => {
             }
 
             <section className='h-[calc(100vh-80px)] overflow-auto no-scrollbar peer-last:mb-[400px]'>
-                { categories.map(category => <CategoryWithIcon icon={category.icon} text={category.text} />)}
+                { categories.map((category, index) => <CategoryWithIcon key={index} icon={category.icon} text={category.text} />)}
             </section>
         </div>
     )
