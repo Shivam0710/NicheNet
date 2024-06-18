@@ -1,15 +1,24 @@
 import Categories from "@/components/homepage/Categories";
-import WebpageDisplay from "@/components/homepage/WebpageDisplay";
-import { CgScreenShot } from "react-icons/cg";
+import { data } from '@/db'
+import { getSubcategoryData } from "@/helper/getSubcategoryData";
+import SubcategorySelection from "@/components/homepage/SubcategorySelection";
 
-export default function Home() {
+export default function Home({ params,
+  searchParams }: {
+    params: { slug: string };
+    searchParams?: { [key: string]: string | string[] | undefined };
+  }) {
+  const categories = Object.keys(data)
+  const category: string = String (searchParams?.category || categories[0]);
+
+  const subCategories = getSubcategoryData(category)
+
   return (
     <>
       <main className="">
         <div className="flex">
-          <Categories showHeading={true} />
-          <Categories showHeading={false} />
-          <WebpageDisplay />
+          <Categories showHeading={true} categories={categories} isMainCategoriesTab={true} handleClick={null} />
+          <SubcategorySelection subCategories={subCategories} />
         </div>
       </main>
     </>
