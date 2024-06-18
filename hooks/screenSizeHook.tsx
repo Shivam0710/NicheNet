@@ -1,5 +1,4 @@
-import React, { useEffect, useState } from "react";
-import { isMobile } from 'react-device-detect'
+import { useEffect, useState } from "react";
 
 export const screenSizeHook = () => {
     const [screenSize, setScreenSize] = useState({ width: window.innerWidth, height: window.innerHeight });
