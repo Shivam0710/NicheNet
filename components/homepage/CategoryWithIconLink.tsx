@@ -1,5 +1,6 @@
+import { ComponentContext } from "@/Contexts/ComponentContext";
 import Link from "next/link";
-import React, { ReactNode } from "react";
+import React, { ReactNode, useContext } from "react";
 
 interface CategoryWithIconProps {
     icon: ReactNode,
@@ -7,10 +8,15 @@ interface CategoryWithIconProps {
 }
 
 const CategoryWithIconLink: React.FC<CategoryWithIconProps> = ({ icon, text }) => {
+    const componentContext = useContext(ComponentContext)
+
     return (
-        <Link href={`/?category=${text}`} className="flex items-center gap-2 py-4 text-center w-full grow hover:bg-[#F5F5F5] cursor-pointer px-8 last:mb-[100px]">
+        <Link href={`/?category=${text}`} className="flex items-center gap-2 py-4 text-center w-full grow hover:bg-[#F5F5F5] cursor-pointer px-6 last:mb-[100px]">
             {icon}
-            <p className="w-[80%] text-left overflow-auto whitespace-nowrap no-scrollbar capitalize"> {text.split("_").join(" ")} </p>
+            { !componentContext.isCollapsed &&
+                <p title={text.split("_").join(" ")} className="w-[80%] text-left overflow-auto whitespace-nowrap no-scrollbar capitalize text-ellipsis"> {text.split("_").join(" ")} </p>
+            }
+            
         </Link>
     )
 }

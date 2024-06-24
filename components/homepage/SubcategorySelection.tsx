@@ -6,7 +6,7 @@ import WebpageDisplay from "./WebpageDisplay"
 import { SubCategoryModel } from "@/models/SubCategoryModel"
 
 interface SubCategoryProps {
-    subCategories: Array<any>
+    subCategories: Array<any>,
 }
 
 export const SubcategorySelection: React.FC<SubCategoryProps> = ({ subCategories }) => {
@@ -25,7 +25,7 @@ export const SubcategorySelection: React.FC<SubCategoryProps> = ({ subCategories
 
     return (
         <>
-            <Categories showHeading={false} categories={subCategoryNames} isMainCategoriesTab={false} handleClick={handleCategoryClick} />
+            <Categories showHeading={false} categories={subCategories} isMainCategoriesTab={false} handleClick={handleCategoryClick} />
             { selectedSubCategory &&
                 <WebpageDisplay data={selectedSubCategory} />
             }
