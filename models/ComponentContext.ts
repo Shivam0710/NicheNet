@@ -1,4 +1,7 @@
 export interface ComponentContextType {
     isCollapsed: boolean,
-    handleClick: Function
+    handleClick: Function,
+    selectedCategory: string,
+    selectedSubCategory: string,
+    handleSubcategoryClick: Function
 }

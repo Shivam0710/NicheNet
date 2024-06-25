@@ -4,8 +4,7 @@ import Categories from "@/components/homepage/Categories";
 import { data } from '@/db'
 import { getSubcategoryData } from "@/helper/getSubcategoryData";
 import SubcategorySelection from "@/components/homepage/SubcategorySelection";
-import { useContext, useState } from "react";
-import { createContext } from "vm";
+import { useState } from "react";
 import { ComponentContext } from "@/Contexts/ComponentContext";
 
 export default function Home({ params,
@@ -16,8 +15,13 @@ export default function Home({ params,
   const categories = Object.keys(data)
   const category: string = String (searchParams?.category || categories[0]);
   const [isCollapsed, setIsCollapsed] = useState(false)
+  const [subCategory, setSubCategory] = useState("")
   const handleClick = () => {
     setIsCollapsed(!isCollapsed)
+  }
+
+  const handleSubcategoryClick = (subcategory: string) => {
+    setSubCategory(subcategory)
   }
   const subCategories = getSubcategoryData(category)
 
@@ -25,7 +29,7 @@ export default function Home({ params,
     <>
       <main className="">
         <div className="flex">
-          <ComponentContext.Provider value={{ isCollapsed, handleClick }}>
+          <ComponentContext.Provider value={{ isCollapsed, handleClick, selectedCategory: category, selectedSubCategory: subCategory, handleSubcategoryClick  }}>
             <Categories showHeading={true} categories={categories} isMainCategoriesTab={true} handleClick={null} />
             <SubcategorySelection subCategories={subCategories} />
           </ComponentContext.Provider>

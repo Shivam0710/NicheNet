@@ -1,8 +1,10 @@
 import { ComponentContextType } from "@/models/ComponentContext";
-import { useState, createContext } from "react";
-import ReactDOM from "react-dom/client";
+import { createContext } from "react";
 
 export const ComponentContext = createContext<ComponentContextType>({
     isCollapsed: false,
-    handleClick: () => {}
+    handleClick: () => {},
+    selectedCategory: "freelance",
+    selectedSubCategory: '',
+    handleSubcategoryClick: () => {}
 })

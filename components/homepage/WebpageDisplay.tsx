@@ -39,7 +39,7 @@ const WebpageDisplay: React.FC<WebPageDisplayProps> = ({ data }) => {
                     <iframe className='h-full mx-10 rounded-2xl' src={url} onLoad={() => setLoading(false)} />
                 </div>
                 :
-                <div className='w-[90%] border-l-0 flex flex-col py-4 background-[#F6F6F6] border overflow-hidden gap-4 justify-between'>
+                <div className='w-[90%] border-l-0 flex flex-col py-4 bg-[#F6F6F6] border overflow-hidden gap-4 justify-between'>
                     <AddressBar link={url||""} />
                     <MainSiteContent siteName={name} description={description} link={url} />
                     <ImageScroller />
