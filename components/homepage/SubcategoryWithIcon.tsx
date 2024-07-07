@@ -18,13 +18,12 @@ const SubcategoryWithIconLink: React.FC<SubcategoryWithIconProps> = ({ icon, tex
     const [error, setError] = useState(false)
     const componentContext = useContext(ComponentContext)
 
-    // console.log(componentContext.selectedCategory, "SELECTED")
     return (
-        <div onClick={() => onClick(text)} className={`flex items-center gap-2 py-4 text-center w-full grow hover:bg-[rgba(0,0,0,.1)] cursor-pointer px-6 last:mb-[100px] ${componentContext.selectedSubCategory == text ? 'bg-[rgba(0,0,0,.1)]' : ''}`}>
+        <div onClick={() => onClick(text)} className={`flex items-center gap-2 py-4 text-center w-full grow hover:bg-[#EBFD01] cursor-pointer px-6 last:mb-[100px] ${componentContext.selectedSubCategory == text ? 'bg-[#EBFD01]' : ''}`}>
             { !error ?
                 <img onError={() => setError(true)} className="h-4 w-4 rounded-full" src={getFaviconFromLink(url)||""} alt="" />
                 :
-                <ImAccessibility size={20} />
+                <img height={20} width={20} src="./icon.png" alt="" />
             }
             { !componentContext.isCollapsed &&
                 <p className="w-[80%] text-left overflow-auto whitespace-nowrap no-scrollbar capitalize text-ellipsis"> {text.split("_").join(" ")} </p>

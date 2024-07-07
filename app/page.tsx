@@ -13,6 +13,7 @@ export default function Home({ params,
     searchParams?: { [key: string]: string | string[] | undefined };
   }) {
   const categories = Object.keys(data)
+  console.log(categories)
   const category: string = String (searchParams?.category || categories[0]);
   const [isCollapsed, setIsCollapsed] = useState(false)
   const [subCategory, setSubCategory] = useState("")

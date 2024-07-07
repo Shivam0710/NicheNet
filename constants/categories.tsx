@@ -1,72 +1,21 @@
-import { ImAccessibility } from "react-icons/im";
-
-export const categories = [
-    {
-        icon: <ImAccessibility size={20} />,
-        text: "RoadMap jashdk jkabsdk asjkd aksd "
-    },
-    {
-        icon: <ImAccessibility size={20} />,
-        text: "RoadMap"
-    },
-    {
-        icon: <ImAccessibility size={20} />,
-        text: "RoadMap"
-    },
-    {
-        icon: <ImAccessibility size={20} />,
-        text: "RoadMap"
-    },
-    {
-        icon: <ImAccessibility size={20} />,
-        text: "RoadMap"
-    },
-    {
-        icon: <ImAccessibility size={20} />,
-        text: "RoadMap"
-    },
-    {
-        icon: <ImAccessibility size={20} />,
-        text: "RoadMap"
-    },
-    {
-        icon: <ImAccessibility size={20} />,
-        text: "RoadMap"
-    },
-    {
-        icon: <ImAccessibility size={20} />,
-        text: "RoadMap"
-    },
-    {
-        icon: <ImAccessibility size={20} />,
-        text: "RoadMap"
-    },
-    {
-        icon: <ImAccessibility size={20} />,
-        text: "RoadMap"
-    },
-    {
-        icon: <ImAccessibility size={20} />,
-        text: "RoadMap"
-    },
-    {
-        icon: <ImAccessibility size={20} />,
-        text: "RoadMap"
-    },
-    {
-        icon: <ImAccessibility size={20} />,
-        text: "RoadMap"
-    },
-    {
-        icon: <ImAccessibility size={20} />,
-        text: "RoadMap"
-    },
-    {
-        icon: <ImAccessibility size={20} />,
-        text: "RoadMap"
-    },
-    {
-        icon: <ImAccessibility size={20} />,
-        text: "RoadMap"
-    },
-]
+export const categoryIconMapping: { [key: string]: string } = {
+    'freelance': "/freelance.png",
+    'free_courses': "free_courses.png",
+    'free_mentorship': "/inspiration.png",
+    'notion_templates': "/notion.png",
+    'stock_videos': "/stock_photos.png",
+    'supporting_resource': "/supporting_resources.png",
+    'stock_photos': "/stock_photos.png",
+    'blogs': "/blogs.png",
+    'design_system': "/design_system.png",
+    'jobs': "/jobs.png",
+    'illustration': "/illustration.png",
+    'inspirations': "/inspiration.png",
+    'gradients_and_colors': "/colors-gradients.png",
+    'mockup': "/mockup.png",
+    'ai': "/ai.png",
+    'youtube': "/youtube.png",
+    'no_code_builders': "/no_code_builders.png",
+    'icons': "/icon.png",
+    'figma_resources': "/figma.png"
+}
