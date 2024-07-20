@@ -33,7 +33,7 @@ const Categories: React.FC<CategoriesProps> = ({ showHeading, categories, isMain
             }
 
             { !isMainCategoriesTab &&
-                <div onClick={() => componentContext.handleClick()} className='absolute top-[50%] right-[-26px] shadow-lg border border-black-50 py-3 rounded-tr-lg rounded-br-lg cursor-pointer bg-white border-l-0'>
+                <div onClick={() => componentContext.handleClick()} className='absolute top-[50%] translate-y-[-50%] right-[-26px] shadow-lg border border-black-50 py-3 rounded-tr-lg rounded-br-lg cursor-pointer bg-white border-l-0'>
                     <img src="/arrow.png" className={`h-6 w-6 arrow transition-transform timing-500 ${isCollapsed ? '' : 'rotate-180'}`} alt="" />
                 </div>
             }

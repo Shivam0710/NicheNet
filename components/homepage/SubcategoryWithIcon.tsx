@@ -23,7 +23,7 @@ const SubcategoryWithIconLink: React.FC<SubcategoryWithIconProps> = ({ icon, tex
             { !error ?
                 <img onError={() => setError(true)} className="h-4 w-4 rounded-full" src={getFaviconFromLink(url)||""} alt="" />
                 :
-                <img height={20} width={20} src="./icon.png" alt="" />
+                <img height={20} width={20} src="./default-icon.png" alt="" />
             }
             { !componentContext.isCollapsed &&
                 <p className="w-[80%] text-left overflow-auto whitespace-nowrap no-scrollbar capitalize text-ellipsis"> {text.split("_").join(" ")} </p>
