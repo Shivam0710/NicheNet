@@ -1,4 +1,50 @@
 export const data = {
+   "roadmap" : [
+      {
+         "_id": "123asd123jhj2342",
+         "name": "UX/UI designer",
+         "category": [
+            "roadmap"
+         ],
+         "description": "Step by step guide to becoming a UI/UX Designer in 2024",
+         "url": "https://roadmap.uxuiopen.com/",
+         "tags": [],
+         "embeddable": true
+      },
+      {
+         "_id": "123asd123jhj23423",
+         "name": "UX designer",
+         "category": [
+            "roadmap"
+         ],
+         "description": "Step by step guide to becoming a UX Designer in 2024",
+         "url": "https://roadmap.sh/ux-design",
+         "tags": [],
+         "embeddable": false
+      },
+      {
+         "_id": "123asd123jhj23424",
+         "name": "UI designer",
+         "category": [
+            "roadmap"
+         ],
+         "description": "The UI Design Roadmap covers the topics needed to be covered to learn UI Design fundamentals. It covers important topics such as Color Theory, Typography, Visual Design, etc.",
+         "url": "https://www.geeksforgeeks.org/user-interface-ui-design-roadmap/",
+         "tags": [],
+         "embeddable": false
+      },
+      {
+         "_id": "123asd123jhj23425",
+         "name": "Designer system",
+         "category": [
+            "roadmap"
+         ],
+         "description": "Learn how to create a design system with this step by step guide",
+         "url": "https://roadmap.sh/design-system",
+         "tags": [],
+         "embeddable": false
+      },
+   ],
    "freelance": [
       {
          "_id": "6637ba9c123731300250087c",

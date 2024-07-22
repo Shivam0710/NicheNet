@@ -2,6 +2,8 @@ import { data } from '@/db';
 
 export const getSubcategoryData = (category: string): any[] => {
     switch (category) {
+        case "roadmap":
+            return data.roadmap
         case "freelance":
             return data.freelance;
         case "free_courses":

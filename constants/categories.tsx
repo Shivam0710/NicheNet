@@ -1,4 +1,5 @@
 export const categoryIconMapping: { [key: string]: string } = {
+    'roadmap': '/route.png',
     'freelance': "/freelance.png",
     'free_courses': "free_courses.png",
     'free_mentorship': "/inspiration.png",
