@@ -1462,37 +1462,25 @@ export const data = {
    "notion_templates": [
       {
          "_id": "66486b3a7b024f22c98dbc9d",
-         "name": "Land your dream design job with ChatGPT: Step-by-step Guide",
+         "name": "UX resources",
          "category": [
             "notion_templates"
          ],
-         "description": "A step-by-step guide to use ChatGPT to accelerate your job-hunting journey tenfold! This repository offers step-by-step instructions that will help you optimize your resume based on a job description, and to build your UX case study from scratch faster than ever.",
-         "url": "https://gumroad.com/a/850699219/xwlzu",
+         "description": "",
+         "url": "https://simonasmaciulis.gumroad.com/l/ux-resources",
          "tags": [
-            "fully",
-            "revolution",
-            "editable",
-            "landing",
-            "monthly",
-            "marketing",
-            "pagesdesignup",
-            "fixed",
-            "join",
-            "pages",
-            "design",
-            "unlimited",
-            "feeflames"
+            
          ],
          "embeddable": true
       },
       {
          "_id": "66486c917b024f22c98dbc9f",
-         "name": "Top Design Portfolio Inspiration for Designers",
+         "name": "Design Portfolio",
          "category": [
             "notion_templates"
          ],
-         "description": "A one-stop place to look for portfolio design inspiration. Get 20% off downloading from UiPedia.",
-         "url": "https://arpitchandak.gumroad.com/l/top-design-portfolio-inspiration-for-designers/UIPEDIA",
+         "description": "Use this template to showcase the projects you’ve worked and provide more context on their purpose and the process involved. It’s easy to share this page with anyone by turning on the “Share to Web” feature",
+         "url": "https://notion-templates.notion.site/Design-Portfolio-06c04e85a23f411c81347d75ae627ebb",
          "tags": [
             "inspiration",
             "free",
@@ -1510,16 +1498,16 @@ export const data = {
             "like",
             "copy"
          ],
-         "embeddable": true
+         "embeddable": false
       },
       {
          "_id": "66486da37b024f22c98dbca1",
-         "name": "Building UI/UX Behance Case Studies from Scratch",
+         "name": "Contracting proposal",
          "category": [
             "notion_templates"
          ],
-         "description": "A step-by-step guide on building case studies from scratch to be job-ready. Get 20% off downloading from UiPedia.",
-         "url": "https://arpitchandak.gumroad.com/l/Building-UI-UX-Behance-Case-Studies/UIPEDIA",
+         "description": "To craft a seamless product experience for Acme Inc. The design will be modern and will deploy clean typography, better white-space and other good design practices.",
+         "url": "https://www.notion.so/notion/Contracting-proposal-7923633db9a94590ab75f5406c7680ea",
          "tags": [
             "will",
             "when",
@@ -1542,16 +1530,16 @@ export const data = {
             "gif",
             "command"
          ],
-         "embeddable": true
+         "embeddable": false
       },
       {
          "_id": "6648768f7b024f22c98dbcb4",
-         "name": "Notion",
+         "name": "Minimal designer resume",
          "category": [
             "notion_templates"
          ],
-         "description": "The notion is an all-in-one workspace that combines note-taking, task management, and collaboration tools to streamline productivity.",
-         "url": "https://affiliate.notion.so/nok71by0qo8r",
+         "description": "Minimal Designer Resume",
+         "url": "https://jatinvats.notion.site/Minimal-Designer-Resume-dce6ac6e0c1441408352c32c0262937d",
          "tags": [
             "powerful",
             "business",

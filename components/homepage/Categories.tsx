@@ -28,7 +28,7 @@ const Categories: React.FC<CategoriesProps> = ({ showHeading, categories, isMain
                 </section>
                 :
                 <section className='h-[calc(100vh-80px)] overflow-auto no-scrollbar peer-last:mb-[400px]'>
-                    { categories.map((category, index) => <SubcategoryWithIconLink url={category.url} key={index} icon={<BsBox size={16} />} text={category.name} onClick={handleClick} />)}
+                    { categories.map((category, index) => <SubcategoryWithIconLink url={category.url} key={index} embeddable={category.embeddable} text={category.name} onClick={handleClick} />)}
                 </section>
             }
 
