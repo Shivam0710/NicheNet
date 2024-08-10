@@ -17,7 +17,7 @@ const Categories: React.FC<CategoriesProps> = ({ showHeading, categories, isMain
     const componentContext = useContext(ComponentContext)
     const isCollapsed = componentContext.isCollapsed
     return (
-        <div className={`transition-all duration-500 ease-in-out ${isCollapsed ? 'w-[69px]' : 'w-[216px]'} py-9 border-r-[1px] border-black-50 relative shadow-sm curved-top`}>
+        <div className={`transition-all duration-500 ease-in-out ${isCollapsed ? 'min-w-[69px]' : 'min-w-[216px]'} py-9 border-r-[1px] border-black-50 relative shadow-sm curved-top`}>
             { showHeading && !isCollapsed &&
                 <p className='text-[#989898] text-sm px-6 mb-3'> CATEGORIES </p>
             }
